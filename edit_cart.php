@@ -44,8 +44,8 @@
                         <thead class="thead-light">
                             <tr>
                                 <th colspan="2">Product Detail</th>
-                                <th>Quantity</th>
-                                <th>Price (Pkr)</th>
+                                <th>Số Ngày Thuê</th>
+                                <th>Price </th>
                                 <th>Total</th>
                             </tr>
                         </thead>

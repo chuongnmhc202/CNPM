@@ -42,14 +42,14 @@ if(isset($_SESSION['email'])){
 
             <div class="carousel-inner">
                <div class="carousel-item active">
-                 <img src="img/cupboard.jpg" class="d-block w-100">
+                 <img src="img/1543986879.jpg" class="d-block w-100">
                 
                </div>
                <div class="carousel-item">
-                  <img src="img/couch.jpg" class="d-block w-100">
+                  <img src="img/dich-vu-cho-thue-xe.jpg" class="d-block w-100">
                </div>
                <div class="carousel-item">
-                  <img src="img/bedset_slide.jpg" class="d-block w-100">
+                  <img src="img/thue-xe-Giang-Gia-banner-1024x384.jpg" class="d-block w-100">
                </div>
             
                <!---Controlers-->
@@ -82,7 +82,7 @@ if(isset($_SESSION['email'])){
               ?>
           </div>
 
-           <h1 class="text-center">Latest Products</h1>
+           <h1 class="text-center">Sản phẩm mới nhất</h1>
   
            <div class="row mt-4">
                 
@@ -114,7 +114,7 @@ if(isset($_SESSION['email'])){
                                       <i class="far fa-shopping-cart"></i>
                                   </a>
                                   <a href="product-detail.php?product_id=<?php echo $pid;?>" class="btn btn-default btn-sm hover-effect text-dark" >
-                                       <i class="far fa-info-circle"></i> View Details
+                                       <i class="far fa-info-circle"></i> Chi tiết
                                   </a>
 
                                   </div>
@@ -139,30 +139,30 @@ if(isset($_SESSION['email'])){
       <!---We deal with-->
       <section class="bg-white">
          <div class="container pt-4 pb-5">
-           <h1 class="text-center pt-4">We Deal With </h1>
+           <h1 class="text-center pt-4">Blog </h1>
 
            <!---Row 1-->
            <div class="row mt-5">
              <div class="col-md-4">
-               <img src="img/bedset.jpg" class="hover-effect" width="100%"  alt="bedset">
+               <img src="img/bmw.jpg" class="hover-effect" width="350px" height="200px"  alt="bedset">
                <div class="mt-3">
-               <h4 class="text-center">Modern Bed set Designs</h4>
-               <p class="text-center">We deal with modern bedset design made from manufactured wood with solid wood veneers.Affordable price with high quality products.</p>
+               <h4 class="text-center">Phương tiện hiện đại</h4>
+               <p class="text-center">Car4Rent hứa hẹn đem lại cho khách hàng những chuyến đi trên những phương tiện hiện đại nhất.</p>
              </div>
             </div>
             <div class="col-md-4">
-              <img src="img/dining-set.jpg" class="hover-effect" width="100%"  alt="bedset">
+              <img src="img/mec.jpg" class="hover-effect" width="350px" height="200px"  alt="bedset">
               <div class="mt-3">
-              <h4 class="text-center">Modern Dining Set</h4>
-              <p class="text-center">We deal with dining Table It oozes class and style and is very chic and modern in design. Dining table constructed from a durable solid wood.</p>
+              <h4 class="text-center">Bảo dưỡng định kỳ</h4>
+              <p class="text-center">Car4Rent luôn đảm bảo các chủ xe luôn bảo quản phương tiện của mình định kỳ, không một vết xước.</p>
             </div>
            </div>
 
            <div class="col-md-4">
-            <img src="img/chairyellow.jpg" class="hover-effect" width="100%"  alt="bedset">
+            <img src="img/acura.png" class="hover-effect" width="350px" height="200px"  alt="bedset">
             <div class="mt-3">
-            <h4 class="text-center">Modern Arm Chairs Design</h4>
-            <p class="text-center">We deal with All Modern Style Arm Chairs It oozes class and style and is very chic and modern in design, constructed from a durable solid wood.</p>
+            <h4 class="text-center">Minh bạch, rõ ràng</h4>
+            <p class="text-center">Quy trình thuê xe chuẩn, luôn luôn vì lợi ích cao nhất của khách hàng cũng như doanh nghiệp.</p>
           </div>
          </div>
 
@@ -172,25 +172,25 @@ if(isset($_SESSION['email'])){
            <!---row 2-->
            <div class="row mt-5">
             <div class="col-md-4">
-              <img src="img/table.jpg" class="hover-effect" width="100%"  alt="bedset">
+              <img src="img/lin.jpg" class="hover-effect" width="350px" height="200px"  alt="bedset">
               <div class="mt-3">
-              <h4 class="text-center">New Table Designs</h4>
-              <p class="text-center">We deal with All Modern Style tables It oozes class and style and is very chic and modern in design, constructed from a durable solid wood.</p>
+              <h4 class="text-center">Bảo hiểm đầy đủ</h4>
+              <p class="text-center">Car4Rent thực hiện đẩy đủ bảo hiểm cho xe, khiến khách hàng yên tâm trên mọi nẻo đường.</p>
             </div>
            </div>
            <div class="col-md-4">
-             <img src="img/modern-contemp.jpg" class="hover-effect" width="100%"  alt="bedset">
+             <img src="img/civic.jpg" class="hover-effect" width="350px" height="200px"  alt="bedset">
              <div class="mt-3">
-             <h4 class="text-center">Modern Sofa Designs</h4>
-             <p class="text-center">We deal with All Modern Style Sofas/Couches ,very chic and modern in design, constructed from a durable solid wood.</p>
+             <h4 class="text-center">Giao/nhận tiện lợi</h4>
+             <p class="text-center">Chúng tôi giao xe 24/7, bất kể giờ nào, miễn là có xe, miễn là bạn thích.</p>
            </div>
           </div>
 
           <div class="col-md-4">
-           <img src="img/newcupboard.jpg" class="hover-effect" width="100%"  alt="bedset">
+           <img src="img/out.jpg" class="hover-effect" width="350px" height="200px"  alt="bedset">
            <div class="mt-3">
-           <h4 class="text-center">New Stylish Cupboard Designs</h4>
-           <p class="text-center">We deal with All Modern Style Cupboards, built-in cupboards are storage space that forms part of the design of the room.</p>
+           <h4 class="text-center">Hỗ trợ cứu hộ</h4>
+           <p class="text-center">Dù Bắc hay Nam, miền núi hay vùng biển, dịch vụ cứu hộ của Car4Rent luôn sẵn sàng.</p>
          </div>
         </div>
 
@@ -203,7 +203,7 @@ if(isset($_SESSION['email'])){
       <!---How to Shop -->
       <section class="back-gray pt-4 pb-4">
         <div class="container">
-              <h2 class="text-center">How It Does Work</h2>
+              <h2 class="text-center">Quy trình thuê xe</h2>
               <div class="row">
                 
                 <!--choose product card-->
@@ -212,10 +212,10 @@ if(isset($_SESSION['email'])){
                     <div class="card-body mt-3 text-center">
                        <i class="fal fa-phone-laptop fa-3x"></i>
                           <div class="heading mt-2">
-                            <h4>Product</h4>
-                            <h6 class="text-secandary">Choose your own product</h6>
+                            <h4>Chọn xe</h4>
+                            <h6 class="text-secandary">Xem xe bạn thích</h6>
                           </div>
-                          <p class="mt-2">Add product to cart & proceed to checkout and put your shipping address then checkout that. </p>
+                          <p class="mt-2">Chọn xe bạn thích và thêm vào giỏ hàng.</p>
                        
                     </div>
                   </div>
@@ -229,10 +229,10 @@ if(isset($_SESSION['email'])){
                     <div class="card-body mt-3 text-center">
                        <i class="fal fa-hand-holding-box fa-3x"></i>
                           <div class="heading mt-2">
-                            <h4>Recieve</h4>
-                            <h6 class="text-secandary">Recieve Your Product</h6>
+                            <h4>Xác nhận</h4>
+                            <h6 class="text-secandary">Đợi xác nhận đơn</h6>
                           </div>
-                          <p class="mt-2">After chouckout from cart your product will be deliver at your door step within 7 working days</p>
+                          <p class="mt-2">Nếu xe sẵn sàng trong ngày bạn chọn, chỉ trong 3-5p, đơn sẽ được xác nhận ngay!</p>
                        
                     </div>
                   </div>
@@ -244,12 +244,12 @@ if(isset($_SESSION['email'])){
                 <div class="col-md-4 p-5">
                   <div class="card hover-effect" id="border-less">
                     <div class="card-body mt-3 text-center">
-                       <i class="fal fa-wallet fa-3x"></i>
+                       <i class="fal fa-car fa-3x"></i>
                           <div class="heading mt-2">
-                            <h4>Cash</h4>
-                            <h6 class="text-secandary">Cash on delivery</h6>
+                            <h4>Nhận xe</h4>
+                            <h6 class="text-secandary">Tiến hành lấy xe</h6>
                           </div>
-                          <p class="mt-2">On delivery of your product hold or recieve your products then pay cash on that moment.</p>
+                          <p class="mt-2">Giao xe, nhận cọc, kiểm tra và lên đường thôi!.</p>
                        
                     </div>
                   </div>

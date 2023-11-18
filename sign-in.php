@@ -4,19 +4,15 @@ include('include/header.php'); ?>
         <div class="container sign-in-up">
           <div class="row mb-5" >
             <div class="col-md-6" >
-              <h1>Online Furniture Store</h1>
-              <p>An online furniture shop that allows users to check for various furniture available at the online 
-                store and purchase online. The project consists of list of furniture products displayed in various
-                 models and designs. The user may browse through these products as per categories. If the user likes 
-                 a product he may add it to his shopping cart. Once user wishes to checkout he must 
-                register on the site first. He can then login using same id password next time.</p>
+              <h1>CarForRent</h1>
+              <p>Ứng dụng cho thuê xe tự lái, cho thuê xe du lịch, thuê xe cưới, thuê xe kèm tài xế với giá tốt, đa dạng mẫu mã xe để lựa chọn, dịch vụ được yêu thích.</p>
             </div>
             
             
             <div class="col-md-6" style="height:66.5vh;">
               <div class="card">
                 <div class="card-body">
-                  <h1 class="text-center mt-5">Sign in</h1>
+                  <h1 class="text-center mt-5">Đăng nhập</h1>
                   
                   <form method="post" class="mt-5 p-3">
 
@@ -85,16 +81,16 @@ include('include/header.php'); ?>
                       <input type="text" name="email" placeholder="Email" class="form-control" required>
                      </div>
                      <div class="form-group">
-                    <input type="password" name="password" placeholder="password" class="form-control" required>
+                    <input type="password" name="password" placeholder="Mật khẩu" class="form-control" required>
                     </div>
                       
-                    <a href="#" > Forget Password?</a>
+                    <a href="#" > Quên mật khẩu?</a>
 
                       <div class="form-group text-center mt-4">
-                        <input type="submit" name="signin" class="btn btn-primary" value="Sign in">
+                        <input type="submit" name="signin" class="btn btn-primary" value="Đăng nhập">
                       </div>
 
-                      <div class="text-center mt-4"> Not a Member Yet <a href="register.php"> Register </a></div>
+                      <div class="text-center mt-4"> Chưa phải thành viên? <a href="register.php"> Đăng ký </a></div>
 
                   </form>
                 </div>

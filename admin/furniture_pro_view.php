@@ -5,13 +5,11 @@
             header('location: signin.php');
           }
 
+        
         if(isset($_GET['del'])){
             $del   = $_GET['del'];
-            $query = "DELETE FROM `furniture_product` WHERE pid = $del";
-            if(mysqli_query($con,$query)){
-                echo "<script> alert('This product has been deleted');</script>";
-        
-            }
+            $query = "DELETE FROM furniture_product WHERE pid = $del";
+            $run   = mysqli_query($con,$query);
         }
 
         if(isset($_GET['status'])){
@@ -33,7 +31,7 @@
                  </div> 
 
                  <div class="col-md-7">
-                   <h2 class="display-4 ml-2 mt-4">View Furniture Products:</h2>
+                   <h2 class="display-4 ml-2 mt-4">Xem các sản phẩm </h2>
                  </div> 
                  <div class="col-md-4">
                     <div class="font-weight-bold mt-5 text-right" style="font-size:24px;">
@@ -47,16 +45,16 @@
         <table class="table table-responsive table-hover ">
                       <thead class="thead-light">
                           <tr>
-                              <th>Product Id</th>
-                              <th>Image</th>
-                              <th>Title</th>
-                              <th>Category</th>
-                              <th>Size</th>
-                              <th>Price (Pkr)</th>
-                              <th>Detail</th>
-                              <th>Status</th>
-                              <th>Date</th>
-                              <th colspan="4">Actions(Edit/Del)</th>
+                              <th>Mã xe</th>
+                              <th>Hình ảnh</th>
+                              <th>Tên xe</th>
+                              <th>Hãng</th>
+                              <th>Số chỗ</th>
+                              <th>Giá</th>
+                              <th>Chi tiết</th>
+                              <th>Trạng thái</th>
+                              <th>Ngày thêm</th>
+                              <th colspan="4">Tác vụ</th>
                               <th colspan="4"></th>
                           </tr>
                       </thead>
@@ -64,9 +62,9 @@
                           <?php
 
                                        if(isset($status)){
-                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id WHERE status = '$status' order by pid";
+                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id WHERE status = '$status'  limit 5";
                                        } else{
-                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id order by pid";
+                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id order by pid limit 15" ;
                                        }
                                         $pr_run   = mysqli_query($con,$pr_query);
                                         

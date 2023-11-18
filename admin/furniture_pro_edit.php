@@ -84,7 +84,7 @@ if(isset($_SESSION['email'])){
                     <!-- Grid column -->
                     
                       <div class="form-group">
-                       <label for="furniture">Furniture Product Title:</label>
+                       <label for="furniture"> Product Title:</label>
                        <input type="text" class="form-control" name="title" value="<?php echo $db_title;?>" placeholder="Title">
                       </div>
                     </div>
@@ -118,7 +118,7 @@ if(isset($_SESSION['email'])){
                     <div class="col-md-3">
                       <div class="form-group">
                       <label for="size">Product Size:</label>
-                       <input type="text" class="form-control" name="size" value="<?php echo $db_size; ?>" placeholder="Size: 25w X 25h">
+                       <input type="text" class="form-control" name="size" value="<?php echo $db_size; ?>" placeholder="Số Lượng ghế">
                       </div>
                     </div>
                     <!-- Grid column -->

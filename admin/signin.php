@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Furniture Shop Management System | Admin - Dashboard</title>
+  <title>Car For Rent Management System | Admin - Dashboard</title>
 
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -20,11 +20,11 @@
                 background-image:none;
             }
         }
-        @media (min-width:768px){
+        @media (min-width:800px){
             #image{
-                background-image:url('img/login_banner.jpg');
-                height:100vh;
-                background-size: 1000px 800px; 
+                background-image:url('img/bmw_login_banner.jpg');
+                height:150vh;
+                background-size: 1100px 800px; 
                 opacity:0.7;
             }
         }
@@ -69,8 +69,8 @@
         <div class="container mt-5">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h1 class="login-heading text-center mb-2">Welcome on </h1>
-              <h3 class="login-heading text-center mb-4">Furniture Shop Management System</h3>
+              <h1 class="login-heading text-center mb-2">Welcom to</h1>
+              <h3 class="login-heading text-center mb-4">Car For Rent Management System</h3>
               <form method="post">
               <?php
               if(isset($error)){
@@ -85,19 +85,19 @@
                       }
                       ?>
                 <div class="form-group">
-                 <label for="email">Email address</label>
+                 <label for="email">Email</label>
                  <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
                 </div>
 
                 <div class="form-group">
-                  <label for="password">Password</label>
+                  <label for="password">Mật khẩu</label>
                   <input type="password" name="password" class="form-control" placeholder="Password" required>
                 </div>
 
                 
-                <input class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" value="Sign in" name="signin">
+                <input class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" value="Đăng nhập" name="signin">
                 <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
+                  <a class="small" href="#">Quên mật khẩu?</a></div>
 
               </form>
             </div>

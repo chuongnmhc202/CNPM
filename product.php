@@ -54,14 +54,14 @@
       
       
   <div class="jumbotron">
-    <h2 class="text-center mt-5">Choose Products</h2>
+    <h2 class="text-center mt-5">Chọn Xe</h2>
   </div>
 
    <div class="container mt-5">
        <div class="row">
             <div class="col-md-3 col-12">
                 <div class="list-group">
-                 <a href='product.php' class='list-group-item'><i class='fal fa-home ml-2'></i> Products </a>
+                 <a href='product.php' class='list-group-item'><i class='fal fa-home ml-2'></i> Thương hiệu </a>
                 <?php  
                    $cat_query = "SELECT * FROM categories ORDER BY id ASC";
                    $cat_run   = mysqli_query($con,$cat_query);
@@ -69,8 +69,8 @@
                       While($cat_row = mysqli_fetch_array($cat_run)){
                         $cid      = $cat_row['id'];
                         $cat_name = ucfirst($cat_row['category']);
-                        $font     = $cat_row['fontawesome-icon'];
-                        echo " <a href='product.php?cat_id=$cid' class='list-group-item'><i class='fal $font ml-2'></i> $cat_name </a>";
+                      
+                        echo " <a href='product.php?cat_id=$cid' class='list-group-item'><i class='fal ml-2'></i> $cat_name </a>";
                       }
 
                     }
@@ -88,9 +88,9 @@
                    <div class="col-md-6">
                    <form method="post">
                     <div class="input-group">
-                      <input type="text" class="form-control" name="search" placeholder="Search Products">
+                      <input type="text" class="form-control" name="search" placeholder="Tìm kiếm">
                       <div class="input-group-append">
-                        <input class="btn btn-primary rounded-left" type="submit" name="sear_submit" vlaue="Search">
+                        <input class="btn btn-primary rounded-left" type="submit" name="sear_submit" vlaue="Tìm">
                       </div>
                      </div>
                     </form>

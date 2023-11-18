@@ -32,11 +32,11 @@
                               <th>Product Category</th>
                               <th>Customer Id</th>
                               <th>Customer Email</th>
-                              <th>Price (Pkr)</th>
+                              <th>Price </th>
                               <th>Quantity</th>
                               <th>Order_Status</th>
                               <th>Order_Date</th>
-                              <th>Download Invoice</th>
+                            
                               <th>Change Status</th>
                           </tr>
                       </thead>
@@ -106,7 +106,7 @@
                                 
                                </td>
                                <td><?php echo $order_date;?></td>
-                               <td><a href="invoice.php?invoice=<?php echo $order_invoice; ?>"><i class="fad fa-arrow-alt-circle-down fa-3x text-primary"></i></a></td>
+                             
                                <td><a href="edit_furn_verify_pen.php?order_id=<?php echo $order_id; ?>"><button type="button" class="btn btn-primary btn-sm"> Edit</button></a></td>
                             </tr>   
                            <?php 

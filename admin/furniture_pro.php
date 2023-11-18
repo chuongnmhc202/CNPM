@@ -25,6 +25,8 @@ if(isset($_SESSION['email'])){
                     if(isset($_POST['submit'])){ 
                     $title      = $_POST['title'];
                     $size       = $_POST['size'];
+                    $color       = $_POST['color'];
+                    $so       = $_POST['so'];
                     $price      = $_POST['price'];
                     $date       = date("d-m-Y");
                     $status     = $_POST['status'];
@@ -33,9 +35,9 @@ if(isset($_SESSION['email'])){
                     $image      = $_FILES['upload']['name'];
                     $tmp_image  = $_FILES['upload']['tmp_name'];
                         
-                    if(!empty($title) or !empty($size) or !empty($price) or !empty($status) or !empty($category) or !empty($detail) or !empty($image)){
-                     $query = "INSERT INTO furniture_product(`title`, `category`, `size`, `price`, `detail`, `image`, `date`, `status`)
-                      VALUES('$title',$category,'$size',$price,'$detail','$image','$date','$status')";
+                    if(!empty($title) or !empty($size)  or !empty($price) or !empty($status) or !empty($category) or !empty($detail) or !empty($image) or !empty($Color) or !empty($So)){
+                     $query = "INSERT INTO furniture_product(`title`, `category`, `size`,'color','so', `price`, `detail`, `image`, `date`, `status`)
+                      VALUES('$title',$category,'$size','$color','$so',$price,'$detail','$image','$date','$status')";
                      
                         if(mysqli_query($con,$query)){
                             $path = "img/".$image;
@@ -65,7 +67,7 @@ if(isset($_SESSION['email'])){
                     <!-- Grid column -->
                     <div class="col-md-12">
                       <div class="form-group">
-                       <label for="furniture">Furniture Product Title:</label>
+                       <label for="furniture">Product Title:</label>
                        <input type="text" class="form-control" name="title" id="inputEmail4MD" placeholder="Title">
                       </div>
                     </div>
@@ -99,7 +101,19 @@ if(isset($_SESSION['email'])){
                     <div class="col-md-3">
                       <div class="form-group">
                       <label for="size">Product Size:</label>
-                       <input type="text" class="form-control" name="size"  placeholder="Size: 25w X 25h">
+                       <input type="text" class="form-control" name="size"  placeholder="Số Lượng Ghế">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                      <label for="size">Product Color:</label>
+                       <input type="text" class="form-control" name="Color"  placeholder="Vàng , Xanh , Trắng">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                      <label for="size">Số :</label>
+                       <input type="text" class="form-control" name="So"  placeholder="Số Tự Động">
                       </div>
                     </div>
                     <!-- Grid column -->
@@ -111,14 +125,16 @@ if(isset($_SESSION['email'])){
                     </div>
 
                     <div class="col-md-3">
-                     <label for="size">Product Status:</label>
+                     <label for="size">Product color:</label>
                       <select class="form-control" name="status">
-                        <option value="publish" selected>Publish</option>
-                        <option value="draft">Draft</option>
+                        <option value="1" selected>Publish</option>
+                        <option value="2">Draft</option>
                       </select>
                     </div>
+                   
                     
               </div> 
+              <br>
                        
               <div class="row">
                 <div class="col-md-12">
